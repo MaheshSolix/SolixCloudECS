@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+E:\Solix ECS\ARCA_Automation\.metadata\.plugins\org.eclipse.jdt.core

@@ -1,0 +1,10 @@
+ATUREPORT and AssertFail Behaviour
+
+both when marked as failed without try catch fails the testcase and build is shown in red colour.
+both when marked as failed with try catch fails the testcase but build is shown in green colour.
+
+when marked as failed for atureport or for assert in dataprovider does'nt halt the execution of remaining testcases and shows build in red colour
+so use it directly without try catch in case of dataprovider.
+
+but when used with for loop always use atureports but not assert as it will break the loop and one thing to remember here is whenever testcase fails
+declare one variable[assertFailed] as static and intialize it to "". assing this variable to true when testcase fails and after the loop ends verify if assertFailed contains true or not, if true assert.fail else assert.true which helps to show build in red colour. 
